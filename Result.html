@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .result{
+        height: 500px;
+        width: 400px;
+        border: 2px solid black;
+       }
+
+        .Marksheet{
+            border: 2px solid black;
+        }
+
+        .main{
+           
+            display: flex;
+        }
+
+        h3{
+            margin-left: 10px;
+        }
+
+        .lang{
+            padding-left: 30px;
+        }
+
+        .input{
+            font-size: 35px;
+            margin-left: 30px;
+            
+        }
+
+       
+    </style>
+</head>
+<body>
+    
+    <div class="result">
+
+        <h3>Marksheet For Information Technology</h3>
+        <center>Enter Marks</center>
+        <div class="main">
+            <div class="lang">
+                <h4>1. C Language </h4>
+                <h4>2. C++ Language</h4>
+                <h4>3. Database</h4>
+                <h4>4. HTML</h4>
+                <h4>5. CSS</h4>
+                <h4>6. php</h4>
+                <h4>7. Core java</h4> <br>
+               <b>Total is: </b><span id="total"></span> <br> <br>
+                <b>Percentage is: </b><span id="percentage" ></span>
+            </div>
+
+            <div class="input">
+                <input type="text" name="" id="i1"> <br> 
+                <input type="text" name="" id="i2"> <br>
+                <input type="text" name="" id="i3"> <br>
+                <input type="text" name="" id="i4"> <br>
+                <input type="text" name="" id="i5"> <br>
+                <input type="text" name="" id="i6"> <br>
+                <input type="text" name="" id="i7"> <br>
+                <input type="button" onclick="result()" value="Result">
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+       
+
+       
+      function result() {
+        inp1 = document.getElementById("i1").value;
+        inp2 = document.getElementById("i2").value;
+        inp3 = document.getElementById("i3").value;
+        inp4 = document.getElementById("i4").value;
+        inp5 = document.getElementById("i5").value;
+        inp6 = document.getElementById("i6").value;
+        inp7 = document.getElementById("i7").value;
+
+        document.getElementById("total").innerHTML = inp1+inp2+inp3+inp4+inp5+inp6+inp7;
+        
+      }
+
+     
+
+    </script>
+
+  
+</body>
+</html>

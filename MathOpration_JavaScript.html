@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 20px;
+            
+        }
+
+        div{
+            border: 2px solid black;
+            height: 350px;
+            width: 500px;
+            padding: 20px 20px;
+        }
+
+        button{
+            font-size: 30px;
+            padding: 0px 20px;
+            margin-bottom: 5px;
+        }
+
+        #inp1{
+            margin-left: 50px;
+            font-size: 20px;
+        }
+
+        #inp2{
+            margin-left: 50px;
+            font-size: 20px;
+        }
+
+        input{
+            font-size: 30px;
+            
+            
+        }
+
+        
+
+        .b1{
+            margin-left: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+
+    <center>
+    
+    <h1>Maths Operations</h1>
+
+    <form action="">
+
+    <b>Enter 1 number </b> : <input type="text" id="inp1" pattern="[0-9]"> <br><br>
+    <b>Enter 2 number </b> : <input type="text" id="inp2" pattern="[0-9]"> <br><br>
+
+    </center>
+    <!-- <button  class="b1" onclick="add()" >+</button> -->
+    <input type="button" name="" id="" value="+" onclick="add()" style="margin-left: 30px;">
+    <input type="button" name="" id="" value="-" onclick="sub()">
+    <input type="button" name="" id="" value="*" onclick="mul()"> &nbsp; &nbsp; Answer is:<span id="result"></span> <br> <br>
+    <input type="button" name="" id="" value="/" onclick="div()" style="margin-left: 30px;">
+    <input type="button" name="" id="" value="%" onclick="mod()">
+
+
+    </form>
+<!-- 
+    <p>The Result is : <br>
+        <span id="result"></span>
+    </p> -->
+ 
+
+    
+
+   
+
+    </div>
+
+    <script>
+     
+        function add(){    
+                num1 = document.getElementById("inp1").value;
+                num2 = document.getElementById("inp2").value;
+                res = document.getElementById("result").innerHTML = num1  + num2;
+        }
+
+        function sub(){    
+                num1 = document.getElementById("inp1").value;
+                num2 = document.getElementById("inp2").value;
+                res = document.getElementById("result").innerHTML = num1-num2;
+        }
+
+        function mul(){    
+                num1 = document.getElementById("inp1").value;
+                num2 = document.getElementById("inp2").value;
+                res = document.getElementById("result").innerHTML = num1*num2;
+        }
+
+        function div(){    
+                num1 = document.getElementById("inp1").value;
+                num2 = document.getElementById("inp2").value;
+                res = document.getElementById("result").innerHTML = num1/num2;
+        }
+
+        function mod(){    
+                num1 = document.getElementById("inp1").value;
+                num2 = document.getElementById("inp2").value;
+                res = document.getElementById("result").innerHTML = num1%num2;
+        }
+
+
+      
+
+
+    
+
+    </script>
+
+</body>
+</html>
