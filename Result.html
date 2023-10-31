@@ -78,16 +78,19 @@
 
        
       function result() {
-        inp1 = document.getElementById("i1").value;
-        inp2 = document.getElementById("i2").value;
-        inp3 = document.getElementById("i3").value;
-        inp4 = document.getElementById("i4").value;
-        inp5 = document.getElementById("i5").value;
-        inp6 = document.getElementById("i6").value;
-        inp7 = document.getElementById("i7").value;
+        inp1 = parseInt(document.getElementById("i1").value);
+        inp2 = parseInt(document.getElementById("i2").value);
+        inp3 = parseInt(document.getElementById("i3").value);
+        inp4 = parseInt(document.getElementById("i4").value); 
+        inp5 = parseInt(document.getElementById("i5").value); 
+        inp6 = parseInt(document.getElementById("i6").value); 
+        inp7 = parseInt(document.getElementById("i7").value); 
 
         document.getElementById("total").innerHTML = inp1+inp2+inp3+inp4+inp5+inp6+inp7;
         
+        t = inp1+inp2+inp3+inp4+inp5+inp6+inp7;
+
+        document.getElementById("percentage").innerHTML = t*100/700;  
       }
 
      
